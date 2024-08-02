@@ -53,7 +53,7 @@ const Search = () => {
         renderItem={({ item }) => (
           <View style={styles.item}>
             {/* <Image source={item.thumbnail} style={styles.image}/> */}
-            <Text>{item.title}</Text>
+            <Text style={styles.itemText}>{item.title}</Text>
           </View>
         )}
       />
@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
     marginBottom: 10,
+    color: '#000'
   },
   clearButton: {
     backgroundColor: '#9395D3',
@@ -93,9 +94,13 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     borderRadius: 5,
     marginBottom: 10,
+    color: '#000'
   },
   image:{
     width: 100,
     height: 100,
+  },
+  itemText: {
+    color: '#000',
   }
 });

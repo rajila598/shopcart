@@ -11,13 +11,13 @@ type ProdStackParamList = {
 const Stack = createStackNavigator<ProdStackParamList>();
 
 
-const ProdStackNavigator:React.FC=()=> {
+const ProdStackNavigator: React.FC = () => {
   return (
     <Stack.Navigator>
-    <Stack.Screen name="ProductHome" component={Home} options={{headerShown:false}}/>
-    <Stack.Screen name="Search" component={Search} options={{headerShown:false}}/>
-    <Stack.Screen name="Cart" component={Cart} options={{headerShown:false}}/>
-    <Stack.Screen name="ProductDetail" component={ProductDetail} options={{headerShown:false}}/>
+      <Stack.Screen name="ProductHome" component={Home} options={{ headerShown: false }} />
+      <Stack.Screen name="Search" component={Search} options={{ headerShown: false }} />
+      <Stack.Screen name="Cart" component={Cart} options={{ headerShown: false }} />
+      <Stack.Screen name="ProductDetail" component={ProductDetail} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }

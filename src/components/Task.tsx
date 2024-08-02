@@ -42,4 +42,7 @@ const style = StyleSheet.create({
         fontSize: 18,
         fontWeight: '600'
     },
+    taskDescription: {
+        color: '#000',
+    }
 })

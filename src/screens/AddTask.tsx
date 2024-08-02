@@ -63,6 +63,7 @@ const style = StyleSheet.create({
         margin: 10,
         padding: 20,
         borderRadius: 10,
+        color: '#000'
     },
     addContainer: {
         alignItems: 'center'

@@ -11,7 +11,7 @@ import { useNavigation } from '@react-navigation/native';
 
 // type ProductDetailScreenNavigationProp = StackNavigationProp<ProdStackParamList, 'ProductDetail'>;
 
-const ProductCard = ({ item}) => {
+const ProductCard = ({ item }) => {
     const navigation = useNavigation();
     // const navigation = useNavigation<ProductDetailScreenNavigationProp>();
     const handleNavigateToDetail = () => {
@@ -27,7 +27,7 @@ const ProductCard = ({ item}) => {
                     <Text style={style.price}>Rs. {item.price}</Text>
                     <Text style={style.discount}>-{item.discountPercentage}%</Text>
                 </View>
-                <Text><Ionicons name="star" color={'#FFD700'} />{item.rating}</Text>
+                <Text style={style.rating}><Ionicons name="star" color={'#FFD700'} />{item.rating}</Text>
             </View>
         </TouchableOpacity>
     )
@@ -55,6 +55,9 @@ const style = StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'center',
         margin: 5
+    },
+    rating: {
+        color: '#000'
     },
     pricings: {
         flexDirection: 'row',

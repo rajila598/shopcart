@@ -54,7 +54,7 @@ const Cart = () => {
         </TouchableOpacity>
           ))
         ) : (
-          <View><Text>Cart is empty</Text></View>
+          <View><Text style={styles.cartEmpty}>Cart is empty</Text></View>
         )
       }
       </View>
@@ -140,4 +140,9 @@ const styles = StyleSheet.create({
     color: '#888',
     marginTop: 16,
   },
+  cartEmpty: {
+    color: '#000',
+    fontSize: 20,
+    textAlign: 'center'
+  }
 });
