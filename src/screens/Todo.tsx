@@ -32,9 +32,7 @@ const Todo = ({ navigation, taskItems }) => {
                     ))}
                 </View>
             </View>
-            {/* <KeyboardAvoidingView>
-
-            </KeyboardAvoidingView> */}
+            
             <View style={style.addTask}>
                 <TouchableOpacity style={style.addBtn} onPress={() => navigation.navigate('AddTask')}>
                     <Text style={style.add}>+</Text>

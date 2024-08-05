@@ -3,9 +3,10 @@ import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from 'rea
 import { useDispatch, useSelector } from 'react-redux';
 import types from '../redux/types';
 import { logout } from '../redux/actions/authAction';
+import { DrawerContentScrollView } from '@react-navigation/drawer';
 const screenHeight = Dimensions.get('window').height;
 
-const Account = () => {
+const Account = (props) => {
   const dispatch = useDispatch()
   const userData = useSelector((state) => state.authReducer);
   console.log(userData, "=-=-=-=-=-=-=-=-");
@@ -19,6 +20,7 @@ const Account = () => {
 };
 
   return (
+
     <View style={style.container}>
         <View style={style.content}>
             <View>
@@ -66,7 +68,7 @@ const style = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    width: 370,
+    width: 200,
     height: 50,
     backgroundColor: '#9395D3',
     color: '#ffffff',

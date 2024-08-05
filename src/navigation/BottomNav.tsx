@@ -37,7 +37,6 @@ const BottomNav = () => {
           <Tab.Screen name="Search" component={Search}/>
           <Tab.Screen name="Cart" component={Cart}/>
           <Tab.Screen name="Account" component={Account}/>
-          <Tab.Screen name="Todo" component={TodoStack} />
           {/* <Tab.Screen name="Login" component={Login} /> */}
           {/* <Tab.Screen name="Drawer" component={MyDrawer} /> */}
         </Tab.Navigator>
